@@ -1,10 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site – My New Hugo Site</title>
+    <title>Up in code – </title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Up in code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 02 Dec 2024 19:13:04 +0100</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
