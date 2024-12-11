@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/bigquery-advanced-utils/modules/bigquery/</loc>
+  </url><url>
+    <loc>http://localhost:1313/bigquery-advanced-utils/getting_started/</loc>
+  </url><url>
+    <loc>http://localhost:1313/prova-a/getting-started/</loc>
+  </url><url>
+    <loc>http://localhost:1313/bigquery-advanced-utils/modules/datatransfer/</loc>
+  </url><url>
+    <loc>http://localhost:1313/bigquery-advanced-utils/modules/</loc>
+  </url><url>
+    <loc>http://localhost:1313/bigquery-advanced-utils/modules/utils/</loc>
+  </url><url>
+    <loc>http://localhost:1313/bigquery-advanced-utils/modules/custom_data_checks/</loc>
+  </url><url>
+    <loc>http://localhost:1313/bigquery-advanced-utils/</loc>
+  </url><url>
+    <loc>http://localhost:1313/prova-a/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url>
+</urlset>
