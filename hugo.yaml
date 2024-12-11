@@ -120,6 +120,9 @@ params:
       # hover | always
       display: always
 
+services:
+  googleAnalytics:
+    ID: G-P29TEEGPHG
   #Capire se li voglio
   #comments:
   #  enable: false
