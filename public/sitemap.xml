@@ -2,23 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/bigquery-advanced-utils/modules/bigquery/</loc>
+    <loc>http://localhost:1313/bigquery-utils/modules/bigquery/</loc>
   </url><url>
-    <loc>http://localhost:1313/bigquery-advanced-utils/getting_started/</loc>
+    <loc>http://localhost:1313/bigquery-utils/getting_started/</loc>
   </url><url>
-    <loc>http://localhost:1313/prova-a/getting-started/</loc>
+    <loc>http://localhost:1313/bigquery-utils/modules/datatransfer/</loc>
   </url><url>
-    <loc>http://localhost:1313/bigquery-advanced-utils/modules/datatransfer/</loc>
+    <loc>http://localhost:1313/bigquery-utils/modules/</loc>
   </url><url>
-    <loc>http://localhost:1313/bigquery-advanced-utils/modules/</loc>
+    <loc>http://localhost:1313/bigquery-utils/modules/utils/</loc>
   </url><url>
-    <loc>http://localhost:1313/bigquery-advanced-utils/modules/utils/</loc>
+    <loc>http://localhost:1313/bigquery-utils/modules/custom_data_checks/</loc>
   </url><url>
-    <loc>http://localhost:1313/bigquery-advanced-utils/modules/custom_data_checks/</loc>
-  </url><url>
-    <loc>http://localhost:1313/bigquery-advanced-utils/</loc>
-  </url><url>
-    <loc>http://localhost:1313/prova-a/</loc>
+    <loc>http://localhost:1313/bigquery-utils/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
