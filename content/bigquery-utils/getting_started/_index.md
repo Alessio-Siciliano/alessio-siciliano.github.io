@@ -4,7 +4,8 @@ weight: 1
 next: /docs/guide
 prev: /docs
 draft: false
-
+cascade:
+  type: docs
 ---
 
 ## Quick Start

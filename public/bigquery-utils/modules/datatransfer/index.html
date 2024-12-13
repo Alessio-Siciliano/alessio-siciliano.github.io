@@ -12,7 +12,8 @@
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 
   <title>Datatransfer – Up in Cloud ☁️</title>
-  <meta name="description" content="Hugo reads its configuration from hugo.yaml in the root of your Hugo site. The config file is where you can configure all aspects of your site. Check out the config file for this site exampleSite/hugo.yaml on GitHub to get a comprehensive idea of available settings and best practices." />
+  <meta name="description" content="Introduction This module provides a custom implementation of the DataTransferServiceClient to extend its functionality. It allows advanced querying of scheduled transfers in BigQuery, adding features like caching and filtering by owner email or table.
+Class Initialization The DataTransferClient extends the original Google Cloud DataTransferServiceClient to provide additional utility methods for managing scheduled queries in BigQuery. The enhancements include caching, advanced filtering, and integration with string utilities." />
 
   
     <link rel="canonical" href="http://localhost:1313/bigquery-utils/modules/datatransfer/" itemprop="url" />
@@ -27,11 +28,13 @@
 
   
   <meta itemprop="name" content="Datatransfer">
-  <meta itemprop="description" content="Hugo reads its configuration from hugo.yaml in the root of your Hugo site. The config file is where you can configure all aspects of your site. Check out the config file for this site exampleSite/hugo.yaml on GitHub to get a comprehensive idea of available settings and best practices.">
-  <meta itemprop="wordCount" content="910">
+  <meta itemprop="description" content="Introduction This module provides a custom implementation of the DataTransferServiceClient to extend its functionality. It allows advanced querying of scheduled transfers in BigQuery, adding features like caching and filtering by owner email or table.
+Class Initialization The DataTransferClient extends the original Google Cloud DataTransferServiceClient to provide additional utility methods for managing scheduled queries in BigQuery. The enhancements include caching, advanced filtering, and integration with string utilities.">
+  <meta itemprop="wordCount" content="285">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Datatransfer">
-  <meta name="twitter:description" content="Hugo reads its configuration from hugo.yaml in the root of your Hugo site. The config file is where you can configure all aspects of your site. Check out the config file for this site exampleSite/hugo.yaml on GitHub to get a comprehensive idea of available settings and best practices.">
+  <meta name="twitter:description" content="Introduction This module provides a custom implementation of the DataTransferServiceClient to extend its functionality. It allows advanced querying of scheduled transfers in BigQuery, adding features like caching and filtering by owner email or table.
+Class Initialization The DataTransferClient extends the original Google Cloud DataTransferServiceClient to provide additional utility methods for managing scheduled queries in BigQuery. The enhancements include caching, advanced filtering, and integration with string utilities.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -214,7 +217,7 @@
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
     </a>
               <div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col open"><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/bigquery-utils/modules/bigquery/"
@@ -232,33 +235,21 @@
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#navigation"
+                href="#introduction"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Navigation</a>
+              >Introduction</a>
             </li>
           <li>
               <a
-                href="#sidebar"
+                href="#class-initialization"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Sidebar</a>
+              >Class Initialization</a>
             </li>
           <li>
               <a
-                href="#right-sidebar"
+                href="#methods-overview"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Right Sidebar</a>
-            </li>
-          <li>
-              <a
-                href="#footer"
-                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Footer</a>
-            </li>
-          <li>
-              <a
-                href="#others"
-                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Others</a>
+              >Methods Overview</a>
             </li>
           </ul>
   
@@ -320,7 +311,7 @@
   >Modules
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
     </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col open"><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/bigquery-utils/modules/bigquery/"
@@ -387,83 +378,34 @@
   <div class="hx-flex hx-items-center hx-gap-2 hx-capitalize"><svg height=12 class="group-data-[theme=light]:hx-hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="group-data-[theme=light]:hx-hidden">Light</span><svg height=12 class="group-data-[theme=dark]:hx-hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="group-data-[theme=dark]:hx-hidden">Dark</span></div>
 </button>
 </div></div></aside>
-    
-<nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
+    <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#navigation">Navigation
+              
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#introduction">Introduction
         </a>
       </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#menu">Menu
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#class-initialization">Class Initialization
         </a>
       </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#logo-and-title">Logo and Title
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#methods-overview">Methods Overview
         </a>
       </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#sidebar">Sidebar
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#list_transfer_configs">list_transfer_configs
         </a>
       </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#main-sidebar">Main Sidebar
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#list_transfer_config_by_owner_email">list_transfer_config_by_owner_email
         </a>
       </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#extra-links">Extra Links
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#list_transfer_configs_by_table">list_transfer_configs_by_table
         </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#right-sidebar">Right Sidebar
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contents">Table of Contents
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#page-edit-link">Page Edit Link
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#footer">Footer
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#copyright">Copyright
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#others">Others
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#favicon">Favicon
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#theme-configuration">Theme Configuration
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#page-width">Page Width
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#search-index">Search Index
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#google-analytics">Google Analytics
-        </a>
-      </li></ul>
-      <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
-        <button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="hx-transition-all hx-duration-75 hx-opacity-0 hx-text-xs hx-font-medium hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-100 contrast-more:hx-text-gray-800 contrast-more:dark:hx-text-gray-50">
+      </li></ul><div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400"><button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="hx-transition-all hx-duration-75 hx-opacity-0 hx-text-xs hx-font-medium hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-100 contrast-more:hx-text-gray-800 contrast-more:dark:hx-text-gray-50">
           <span>Scroll to top</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hx-inline ltr:hx-ml-1 rtl:hx-mr-1 hx-h-3.5 hx-w-3.5 hx-border hx-rounded-full hx-border-gray-500 hover:hx-border-gray-900 dark:hx-border-gray-400 dark:hover:hx-border-gray-100 contrast-more:hx-border-gray-800 contrast-more:dark:hx-border-gray-50">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-          </svg>
         </button>
       </div>
     </div>
@@ -472,392 +414,37 @@
 
     <article class="hx-w-full hx-break-words hx-flex hx-min-h-[calc(100vh-var(--navbar-height))] hx-min-w-0 hx-justify-center hx-pb-8 hx-pr-[calc(env(safe-area-inset-right)-1.5rem)]">
       <main class="hx-w-full hx-min-w-0 hx-max-w-6xl hx-px-6 hx-pt-4 md:hx-px-12">
+        
+  <div class="hx-mt-1.5 hx-flex hx-items-center hx-gap-1 hx-overflow-hidden hx-text-sm hx-text-gray-500 dark:hx-text-gray-400 contrast-more:hx-text-current">
+        <div class="hx-whitespace-nowrap hx-transition-colors hx-min-w-[24px] hx-overflow-hidden hx-text-ellipsis hover:hx-text-gray-900 dark:hover:hx-text-gray-100">
+          <a href="/bigquery-utils/">BigQuery Advanced Utils</a>
+        </div><svg class="hx-w-3.5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        <div class="hx-whitespace-nowrap hx-transition-colors hx-min-w-[24px] hx-overflow-hidden hx-text-ellipsis hover:hx-text-gray-900 dark:hover:hx-text-gray-100">
+          <a href="/bigquery-utils/modules/">Modules</a>
+        </div><svg class="hx-w-3.5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx-whitespace-nowrap hx-transition-colors hx-font-medium hx-text-gray-700 contrast-more:hx-font-bold contrast-more:hx-text-current dark:hx-text-gray-100 contrast-more:dark:hx-text-current">Datatransfer</div>
+  </div>
+
         <div class="content">
           <h1>Datatransfer</h1>
-          <p>Hugo reads its configuration from <code>hugo.yaml</code> in the root of your Hugo site.
-The config file is where you can configure all aspects of your site.
-Check out the config file for this site <a href="https://github.com/imfing/hextra/blob/main/exampleSite/hugo.yaml" target="_blank" rel="noopener"><code>exampleSite/hugo.yaml</code></a> on GitHub to get a comprehensive idea of available settings and best practices.</p>
-<h2>Navigation<span class="hx-absolute -hx-mt-20" id="navigation"></span>
-    <a href="#navigation" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Menu<span class="hx-absolute -hx-mt-20" id="menu"></span>
-    <a href="#menu" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Top right menu is defined under the <code>menu.main</code> section in the config file:</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div class="filename" dir="auto">hugo.yaml</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">menu</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">main</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Documentation</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">pageRef</span><span class="p">:</span><span class="w"> </span><span class="l">/docs</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Blog</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">pageRef</span><span class="p">:</span><span class="w"> </span><span class="l">/blog</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">About</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">pageRef</span><span class="p">:</span><span class="w"> </span><span class="l">/about</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Search</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">params</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">search</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">GitHub</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://github.com/imfing/hextra&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">params</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l">github</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<p>There are different types of menu items:</p>
-<ol>
-<li>Link to a page in the site with <code>pageRef</code>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Documentation</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">pageRef</span><span class="p">:</span><span class="w"> </span><span class="l">/docs</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-</li>
-<li>Link to an external URL with <code>url</code>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">GitHub</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://github.com&#34;</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-</li>
-<li>Search bar with <code>type: search</code>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Search</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">params</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">search</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-</li>
-<li>Icon
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">GitHub</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">params</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l">github</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-</li>
-</ol>
-<p>These menu items can be sorted by setting the <code>weight</code> parameter.</p>
-<h3>Logo and Title<span class="hx-absolute -hx-mt-20" id="logo-and-title"></span>
-    <a href="#logo-and-title" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>To modify the default logo, edit <code>hugo.yaml</code> and add the path to your logo file under <code>static</code> directory.
-Optionally, you can change the link that users are redirected to when clicking on your logo, as well as set the width &amp; height of the logo in pixels.</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div class="filename" dir="auto">hugo.yaml</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">navbar</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">displayTitle</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">displayLogo</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">logo</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">images/logo.svg</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">dark</span><span class="p">:</span><span class="w"> </span><span class="l">images/logo-dark.svg</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="l">/</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="m">40</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="m">20</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<h2>Sidebar<span class="hx-absolute -hx-mt-20" id="sidebar"></span>
-    <a href="#sidebar" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Main Sidebar<span class="hx-absolute -hx-mt-20" id="main-sidebar"></span>
-    <a href="#main-sidebar" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>For the main sidebar, it is automatically generated from the structure of the content directory.
-See the <a href="/docs/guide/organize-files" >Organize Files</a> page for more details.</p>
-<p>To exclude a single page from the left sidebar, set the <code>sidebar.exclude</code> parameter in the front matter of the page:</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div class="filename" dir="auto">content/docs/guide/configuration.md</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Configuration</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">sidebar</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">exclude</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<h3>Extra Links<span class="hx-absolute -hx-mt-20" id="extra-links"></span>
-    <a href="#extra-links" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Sidebar extra links are defined under the <code>menu.sidebar</code> section in the config file:</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div class="filename" dir="auto">hugo.yaml</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">menu</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">sidebar</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">More</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">params</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">separator</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;About&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">pageRef</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/about&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Hugo Docs ↗&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://gohugo.io/documentation/&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">3</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<h2>Right Sidebar<span class="hx-absolute -hx-mt-20" id="right-sidebar"></span>
-    <a href="#right-sidebar" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Table of Contents<span class="hx-absolute -hx-mt-20" id="table-of-contents"></span>
-    <a href="#table-of-contents" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Table of contents is automatically generated from the headings in the content file. It can be disabled by setting <code>toc: false</code> in the front matter of the page.</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div class="filename" dir="auto">content/docs/guide/configuration.md</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Configuration</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">toc</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<h3>Page Edit Link<span class="hx-absolute -hx-mt-20" id="page-edit-link"></span>
-    <a href="#page-edit-link" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>To configure the page edit link, we can set the <code>params.editURL.base</code> parameter in the config file:</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div class="filename" dir="auto">hugo.yaml</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">editURL</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">base</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://github.com/your-username/your-repo/edit/main&#34;</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<p>The edit links will be automatically generated for each page based on the provided url as root directory.
-If you want to set edit link for a specific page, you can set the <code>editURL</code> parameter in the front matter of the page:</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div class="filename" dir="auto">content/docs/guide/configuration.md</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Configuration</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">editURL</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://example.com/edit/this/page&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<h2>Footer<span class="hx-absolute -hx-mt-20" id="footer"></span>
-    <a href="#footer" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Copyright<span class="hx-absolute -hx-mt-20" id="copyright"></span>
-    <a href="#copyright" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>To modify the copyright text displayed in your website&rsquo;s footer, you&rsquo;ll need to create a file named <code>i18n/en.yaml</code>.
-In this file, specify your new copyright text as shown below:</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div class="filename" dir="auto">i18n/en.yaml</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">copyright</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;© 2024 YOUR TEXT HERE&#34;</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<p>For your reference, an example <a href="https://github.com/imfing/hextra/blob/main/i18n/en.yaml" target="_blank" rel="noopener"><code>i18n/en.yaml</code></a> file can be found in the GitHub repository. Additionally, you could use Markdown format in the copyright text.</p>
-<h2>Others<span class="hx-absolute -hx-mt-20" id="others"></span>
-    <a href="#others" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Favicon<span class="hx-absolute -hx-mt-20" id="favicon"></span>
-    <a href="#favicon" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>To customize the <a href="https://en.wikipedia.org/wiki/Favicon" target="_blank" rel="noopener">favicon</a> for your site, place icon files under the <code>static</code> folder to override the <a href="https://github.com/imfing/hextra/tree/main/static" target="_blank" rel="noopener">default favicons from the theme</a>:</p>
-<div class="hextra-filetree hx-mt-6 hx-select-none hx-text-sm hx-text-gray-800 dark:hx-text-gray-300 not-prose">
-  <div class="hx-inline-block hx-rounded-lg hx-border hx-px-4 hx-py-2 dark:hx-border-neutral-800">
-  
-
-<li class="hx-group hx-flex hx-list-none hx-flex-col">
-  <button class="hextra-filetree-folder hx-inline-flex hx-cursor-pointer hx-items-center hx-py-1 hover:hx-opacity-60">
-    <span data-state="open" class="data-[state=open]:hx-hidden"><svg width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg></span>
-    <span data-state="open" class="data-[state=closed]:hx-hidden"><svg width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"/></svg></span>
-    <span class="ltr:hx-ml-1 rtl:hx-mr-1">static</span>
-  </button>
-  <ul data-state="open" class="ltr:hx-pl-5 rtl:hx-pr-5 data-[state=closed]:hx-hidden">
-    <li class="hx-flex hx-list-none">
-      <span class="hx-inline-flex hx-cursor-default hx-items-center hx-py-1"><svg width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg><span class="ltr:hx-ml-1 rtl:hx-mr-1">android-chrome-192x192.png</span>
-      </span>
-    </li>
-
-    <li class="hx-flex hx-list-none">
-      <span class="hx-inline-flex hx-cursor-default hx-items-center hx-py-1"><svg width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg><span class="ltr:hx-ml-1 rtl:hx-mr-1">android-chrome-512x512.png</span>
-      </span>
-    </li>
-
-    <li class="hx-flex hx-list-none">
-      <span class="hx-inline-flex hx-cursor-default hx-items-center hx-py-1"><svg width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg><span class="ltr:hx-ml-1 rtl:hx-mr-1">apple-touch-icon.png</span>
-      </span>
-    </li>
-
-    <li class="hx-flex hx-list-none">
-      <span class="hx-inline-flex hx-cursor-default hx-items-center hx-py-1"><svg width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg><span class="ltr:hx-ml-1 rtl:hx-mr-1">favicon-16x16.png</span>
-      </span>
-    </li>
-
-    <li class="hx-flex hx-list-none">
-      <span class="hx-inline-flex hx-cursor-default hx-items-center hx-py-1"><svg width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg><span class="ltr:hx-ml-1 rtl:hx-mr-1">favicon-32x32.png</span>
-      </span>
-    </li>
-
-    <li class="hx-flex hx-list-none">
-      <span class="hx-inline-flex hx-cursor-default hx-items-center hx-py-1"><svg width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg><span class="ltr:hx-ml-1 rtl:hx-mr-1">favicon-dark.svg</span>
-      </span>
-    </li>
-
-    <li class="hx-flex hx-list-none">
-      <span class="hx-inline-flex hx-cursor-default hx-items-center hx-py-1"><svg width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg><span class="ltr:hx-ml-1 rtl:hx-mr-1">favicon.ico</span>
-      </span>
-    </li>
-
-    <li class="hx-flex hx-list-none">
-      <span class="hx-inline-flex hx-cursor-default hx-items-center hx-py-1"><svg width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg><span class="ltr:hx-ml-1 rtl:hx-mr-1">favicon.svg</span>
-      </span>
-    </li>
-
-    <li class="hx-flex hx-list-none">
-      <span class="hx-inline-flex hx-cursor-default hx-items-center hx-py-1"><svg width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg><span class="ltr:hx-ml-1 rtl:hx-mr-1">site.webmanifest</span>
-      </span>
-    </li>
-
-  </ul>
-</li>
-
-</div>
-</div>
-
-<p>Include <code>favicon.ico</code>, <code>favicon.svg</code> and <code>favicon-dark.svg</code> files in your project to ensure your site&rsquo;s favicons display correctly.</p>
-<p>While <code>favicon.ico</code> is generally for older browsers, <code>favicon.svg</code> and <code>favicon-dark.svg</code> are supported by modern browsers.
-Use tools like <a href="https://favicon.io/" target="_blank" rel="noopener">favicon.io</a> or <a href="https://github.com/ruisaraiva19/favycon" target="_blank" rel="noopener">favycon</a> to generate such icons.</p>
-<h3>Theme Configuration<span class="hx-absolute -hx-mt-20" id="theme-configuration"></span>
-    <a href="#theme-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Use the <code>theme</code> setting to configure the default theme mode and toggle button, allowing visitors to switch between light or dark mode.</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div class="filename" dir="auto">hugo.yaml</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">theme</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># light | dark | system</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l">system</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">displayToggle</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<p>Options for <code>theme.default</code>:</p>
-<ul>
-<li><code>light</code> - always use light mode</li>
-<li><code>dark</code> - always use dark mode</li>
-<li><code>system</code> - sync with the operating system setting (default)</li>
+          <h2>Introduction<span class="hx-absolute -hx-mt-20" id="introduction"></span>
+    <a href="#introduction" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>This module provides a custom implementation of the <code>DataTransferServiceClient</code> to extend its functionality. It allows advanced querying of scheduled transfers in BigQuery, adding features like caching and filtering by owner email or table.</p>
+<h2>Class Initialization<span class="hx-absolute -hx-mt-20" id="class-initialization"></span>
+    <a href="#class-initialization" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>The <code>DataTransferClient</code> extends the original Google Cloud <code>DataTransferServiceClient</code> to provide additional utility methods for managing scheduled queries in BigQuery. The enhancements include caching, advanced filtering, and integration with string utilities.</p>
+<h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters"></span>
+    <a href="#parameters" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>credentials</code> (str): The user’s credentials for authentication.</li>
+<li><code>client_options</code> (Optional): A dictionary of custom client settings.</li>
 </ul>
-<p>The <code>theme.displayToggle</code> parameter allows you to display a toggle button for changing themes.
-When set to <code>true</code>, visitors can switch between light or dark mode, overriding the default setting.</p>
-<h3>Page Width<span class="hx-absolute -hx-mt-20" id="page-width"></span>
-    <a href="#page-width" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>The width of the page can be customized by the <code>params.page.width</code> parameter in the config file:</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+<h4>Example<span class="hx-absolute -hx-mt-20" id="example"></span>
+    <a href="#example" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
   
 
-<div class="filename" dir="auto">hugo.yaml</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">page</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># full (100%), wide (90rem), normal (1280px)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l">wide</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">DataTransferClient</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">credentials</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Credentials</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">client_options</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">ClientOptions</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Credentials</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">client_options</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
   <button
     class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
     title="Copy code"
@@ -869,50 +456,26 @@ When set to <code>true</code>, visitors can switch between light or dark mode, o
 
   
 </div>
-<p>There are three available options: <code>full</code>, <code>wide</code>, and <code>normal</code>. By default, the page width is set to <code>normal</code>.</p>
-<p>Similarly, the width of the navbar and footer can be customized by the <code>params.navbar.width</code> and <code>params.footer.width</code> parameters.</p>
-<h3>Search Index<span class="hx-absolute -hx-mt-20" id="search-index"></span>
-    <a href="#search-index" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Full-text search powered by <a href="https://github.com/nextapps-de/flexsearch" target="_blank" rel="noopener">FlexSearch</a> is enabled by default.
-To customize the search index, set the <code>params.search.flexsearch.index</code> parameter in the config file:</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div class="filename" dir="auto">hugo.yaml</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Search</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">search</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">flexsearch</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">flexsearch</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># index page by: content | summary | heading | title</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">index</span><span class="p">:</span><span class="w"> </span><span class="l">content</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<p>Options for <code>flexsearch.index</code>:</p>
-<ul>
-<li><code>content</code> - full content of the page (default)</li>
-<li><code>summary</code> - summary of the page, see <a href="https://gohugo.io/content-management/summaries/" target="_blank" rel="noopener">Hugo Content Summaries</a> for more details</li>
-<li><code>heading</code> - level 1 and level 2 headings</li>
-<li><code>title</code> - only include the page title</li>
+<h2>Methods Overview<span class="hx-absolute -hx-mt-20" id="methods-overview"></span>
+    <a href="#methods-overview" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3><code>list_transfer_configs</code><span class="hx-absolute -hx-mt-20" id="list_transfer_configs"></span>
+    <a href="#list_transfer_configs" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>Description<span class="hx-absolute -hx-mt-20" id="description"></span>
+    <a href="#description" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Retrieves all scheduled queries in a project. Optionally, fetches the email of the owner for each transfer configuration.</p>
+<h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-1"></span>
+    <a href="#parameters-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>dataset_id</code> (str): The ID of the dataset to check.</li>
+<li><code>table_id</code> (str): The ID of the table to check.</li>
+<li><code>request</code> Optional: A ListTransferConfigsRequest object or equivalent dictionary.</li>
+<li><code>parent</code> Optional: The project and location in the format <code>projects/{project_id}/locations/{location_id}</code>.</li>
+<li><code>retry</code> Optional: Retry configuration for handling errors.</li>
+<li><code>timeout</code> Optional: Timeout for the request.</li>
+<li><code>metadata</code> Optional: Additional metadata for the request.</li>
+<li><code>with_email</code> Optional: Whether to fetch the email of the transfer config owner (default is False).</li>
 </ul>
-<p>To customize the search tokenize, set the <code>params.search.flexsearch.tokenize</code> parameter in the config file:</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+<h4>Example<span class="hx-absolute -hx-mt-20" id="example-1"></span>
+    <a href="#example-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
   
 
-<div class="filename" dir="auto">hugo.yaml</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># ...</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">flexsearch</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># full | forward | reverse | strict </span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">tokenize</span><span class="p">:</span><span class="w"> </span><span class="l">forward</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">configs</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">list_transfer_configs</span><span class="p">(</span><span class="n">parent</span><span class="o">=</span><span class="s2">&#34;projects/my-project/locations/my-location&#34;</span><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
   <button
     class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
     title="Copy code"
@@ -924,21 +487,22 @@ To customize the search index, set the <code>params.search.flexsearch.index</cod
 
   
 </div>
-<p>Options for <a href="https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search" target="_blank" rel="noopener"><code>flexsearch.tokenize</code></a>:</p>
-<ul>
-<li><code>strict</code> - index whole words</li>
-<li><code>forward</code> - incrementally index words in forward direction</li>
-<li><code>reverse</code> - incrementally index words in both directions</li>
-<li><code>full</code> - index every possible combination</li>
+<h3><code>list_transfer_config_by_owner_email</code><span class="hx-absolute -hx-mt-20" id="list_transfer_config_by_owner_email"></span>
+    <a href="#list_transfer_config_by_owner_email" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>Description<span class="hx-absolute -hx-mt-20" id="description-1"></span>
+    <a href="#description-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Filters transfer configurations by the email of the owner.</p>
+<h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-2"></span>
+    <a href="#parameters-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>owner_email</code>: The email of the owner to filter by.</li>
+<li><code>parent</code>: The project and location in the format <code>projects/{project_id}/locations/{location_id}</code>.</li>
 </ul>
-<p>To exclude a page from the search index, set the <code>excludeSearch: true</code> in the front matter of the page:</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+<h4>Example<span class="hx-absolute -hx-mt-20" id="example-2"></span>
+    <a href="#example-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
   
 
-<div class="filename" dir="auto">content/docs/guide/configuration.md</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Configuration</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">excludeSearch</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">configs</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">list_transfer_config_by_owner_email</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">owner_email</span><span class="o">=</span><span class="s2">&#34;user@example.com&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">parent</span><span class="o">=</span><span class="s2">&#34;projects/my-project/locations/us&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
   <button
     class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
     title="Copy code"
@@ -950,14 +514,25 @@ To customize the search index, set the <code>params.search.flexsearch.index</cod
 
   
 </div>
-<h3>Google Analytics<span class="hx-absolute -hx-mt-20" id="google-analytics"></span>
-    <a href="#google-analytics" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>To enable <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">Google Analytics</a>, set <code>services.googleAnalytics.ID</code> flag in <code>hugo.yaml</code>:</p>
-<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+<h3><code>list_transfer_configs_by_table</code><span class="hx-absolute -hx-mt-20" id="list_transfer_configs_by_table"></span>
+    <a href="#list_transfer_configs_by_table" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>Description<span class="hx-absolute -hx-mt-20" id="description-2"></span>
+    <a href="#description-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Filters transfer configurations by the table referenced in their queries.</p>
+<h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-3"></span>
+    <a href="#parameters-3" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>table_id</code> (str): The name of the table to filter by (not the full path).</li>
+</ul>
+<h4>Returns<span class="hx-absolute -hx-mt-20" id="returns"></span>
+    <a href="#returns" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>parent</code>: The project and location in the format <code>projects/{project_id}/locations/{location_id}</code>.</li>
+</ul>
+<h4>Example<span class="hx-absolute -hx-mt-20" id="example-3"></span>
+    <a href="#example-3" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
   
 
-<div class="filename" dir="auto">hugo.yaml</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">services</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">googleAnalytics</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ID</span><span class="p">:</span><span class="w"> </span><span class="l">G-MEASUREMENT_ID</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">configs</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">list_transfer_configs_by_table</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="n">table_id</span><span class="o">=</span><span class="s2">&#34;my_table&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="n">parent</span><span class="o">=</span><span class="s2">&#34;projects/my-project/locations/us&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
   <button
     class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
     title="Copy code"
@@ -969,9 +544,18 @@ To customize the search index, set the <code>params.search.flexsearch.index</cod
 
   
 </div>
+
         </div>
         <div class="hx-mt-16"></div>
-        <div class="hx-mt-16"></div>
+        <div class="hx-mb-8 hx-flex hx-items-center hx-border-t hx-pt-8 dark:hx-border-neutral-800 contrast-more:hx-border-neutral-400 dark:contrast-more:hx-border-neutral-400 print:hx-hidden"><a
+        href="/bigquery-utils/modules/bigquery/"
+        title="Bigquery"
+        class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-pr-4 rtl:hx-pl-4"
+      ><svg class="hx-inline hx-h-5 hx-shrink-0 ltr:hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Bigquery</a><a
+        href="/bigquery-utils/modules/bigquery/"
+        title="Bigquery"
+        class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-ml-auto ltr:hx-pl-4 ltr:hx-text-right rtl:hx-mr-auto rtl:hx-pr-4 rtl:hx-text-left"
+      >Bigquery<svg class="hx-inline hx-h-5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
         <script>
   
 

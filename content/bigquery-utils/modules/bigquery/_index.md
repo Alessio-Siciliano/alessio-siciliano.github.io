@@ -1,7 +1,13 @@
 ---
 title: Bigquery
 weight: 1
-prev: /bigquery-advanced-utils/modules
+prev: /bigquery-utils/modules
+next: /bigquery-utils/modules/datatransfer
+toc_depth: 2
+sidebar:
+  open: true
+cascade:
+  type: docs
 ---
 
 ## Introduction
