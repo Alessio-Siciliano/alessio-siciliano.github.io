@@ -15,6 +15,7 @@ outputs:
   home: [HTML]
   page: [HTML]
   section: [HTML, RSS]
+  blog: [HTML, RSS]
 
 markup:
   # allow raw html
@@ -31,18 +32,21 @@ menu:
     - name: Bigquery advanced utils
       pageRef: /bigquery-utils
       weight: 1
+    - name: Blog
+      pageRef: /blog
+      weight: 2
     - name: About
       pageRef: /about
-      weight: 2
+      weight: 3
     - name: Contact ↗
       url: "https://github.com/Alessio-Siciliano"
-      weight: 3
-    - name: Search
       weight: 4
+    - name: Search
+      weight: 5
       params:
         type: search
     - name: GitHub
-      weight: 5
+      weight: 6
       url: "https://github.com/Alessio-Siciliano/bigquery-advanced-utils"
       params:
         icon: github
@@ -121,19 +125,20 @@ params:
       display: always
 
   #Capire se li voglio
-  #comments:
-  #  enable: false
-  #  type: giscus
-#
-  #  # https://giscus.app/
-  #  giscus:
-  #    repo: imfing/hextra
-  #    repoId: R_kgDOJ9fJag
-  #    category: General
-  #    categoryId: DIC_kwDOJ9fJas4CY7gW
-  #    # mapping: pathname
+  comments:
+    enable: false
+    type: giscus
+    #  # https://giscus.app/
+    giscus:
+      repo: Alessio-Siciliano/alessio-siciliano.github.io
+      repoId: R_kgDONX3MtQ
+      category: General
+      categoryId: DIC_kwDONX3Mtc4ClMcZ
+    # mapping: pathname
       # strict: 0
       # reactionsEnabled: 1
       # emitMetadata: 0
       # inputPosition: top
       # lang: en
+  #csp:
+  #  frame_ancestors: "'self' https://giscus.app"
