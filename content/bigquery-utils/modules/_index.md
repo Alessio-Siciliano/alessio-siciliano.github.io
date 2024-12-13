@@ -1,10 +1,11 @@
 ---
 title: Modules
 weight: 2
-prev: /bigquery-advanced-utils/getting-started
-next: /bigquery-advanced-utils/getting-started/modules/bigquery
+prev: /bigquery-utils/getting-started
+next: /bigquery-utils/modules/bigquery
 cascade:
   type: docs
+comments_activated: false
 ---
 
 Explore the following sections to learn how to use Hextra:

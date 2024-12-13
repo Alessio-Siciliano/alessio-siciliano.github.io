@@ -1,5 +1,6 @@
 {{- $lang := site.Language.LanguageCode | default `en` -}}
-
+{{- $comment_actived_in_this_page := .Params.comments_activated | default true -}}
+{{- if $comment_actived_in_this_page -}}
 {{- with site.Params.comments.giscus -}}
 
 <script>
@@ -61,4 +62,5 @@
 <div id="giscus" class="giscus"></div>
 {{- else -}}
   {{ warnf "giscus is not configured" }}
+{{- end -}}
 {{- end -}}

@@ -1,9 +1,8 @@
 ---
 title: Getting Started
 weight: 1
-next: /docs/guide
-prev: /docs
-draft: false
+next: /bigquery-utils/modules
+prev: /bigquery-utils
 cascade:
   type: docs
 ---
@@ -71,7 +70,7 @@ pip install --upgrade bigquery-advanced-utils
 ```
 {{% /details %}}
 
-## Next
+<!--## Next
 
 Explore the following sections for more information about the package:
 
@@ -79,4 +78,4 @@ Explore the following sections for more information about the package:
   {{< card link="../guide/organize-files" title="Organize Files" icon="document-duplicate" >}}
   {{< card link="../guide/configuration" title="Configuration" icon="adjustments" >}}
   {{< card link="../guide/markdown" title="Markdown" icon="markdown" >}}
-{{< /cards >}}
+{{< /cards >}}-->
