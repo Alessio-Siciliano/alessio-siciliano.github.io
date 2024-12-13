@@ -126,7 +126,7 @@ params:
 
   #Capire se li voglio
   comments:
-    enable: false
+    enable: true
     type: giscus
     #  # https://giscus.app/
     giscus:
@@ -134,11 +134,11 @@ params:
       repoId: R_kgDONX3MtQ
       category: General
       categoryId: DIC_kwDONX3Mtc4ClMcZ
-    # mapping: pathname
-      # strict: 0
-      # reactionsEnabled: 1
-      # emitMetadata: 0
-      # inputPosition: top
-      # lang: en
+      mapping: title
+      strict: 0
+      reactionsEnabled: 1
+      emitMetadata: 0
+      inputPosition: bottom
+      loading: lazy
   #csp:
   #  frame_ancestors: "'self' https://giscus.app"

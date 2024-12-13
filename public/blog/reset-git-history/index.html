@@ -567,13 +567,14 @@
       "data-repo-id": "R_kgDONX3MtQ",
       "data-category": "General",
       "data-category-id": "DIC_kwDONX3Mtc4ClMcZ",
-      "data-mapping": "pathname",
+      "data-mapping": "title",
       "data-strict": "0",
       "data-reactions-enabled": "1",
       "data-emit-metadata": "0",
-      "data-input-position": "top",
+      "data-input-position": "bottom",
       "data-theme": getGiscusTheme(),
-      "data-lang": "en-us",
+      "data-lang": "en", 
+      "data-loading": "lazy",
       "crossorigin": "anonymous",
       "async": "",
     };
@@ -582,7 +583,7 @@
     const giscusScript = document.createElement("script");
     Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
     document.getElementById('giscus').appendChild(giscusScript);
-
+    
     
     const toggles = document.querySelectorAll(".theme-toggle");
     if (toggles) {
@@ -591,7 +592,7 @@
   });
 </script>
 
-<div id="giscus"></div>
+<div id="giscus" class="giscus"></div>
       </main>
     </article>
   </div>

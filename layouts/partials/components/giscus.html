@@ -29,7 +29,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const giscusAttributes = {
       "src": "https://giscus.app/client.js",
-      "data-repo": {{ .repo }},
+      "data-repo": "Alessio-Siciliano/alessio-siciliano.github.io",
       "data-repo-id": "{{ .repoId }}",
       "data-category": "{{ .category }}",
       "data-category-id": "{{ .categoryId }}",
@@ -39,7 +39,8 @@
       "data-emit-metadata": "{{ (string .emitMetadata) | default 0 }}",
       "data-input-position": "{{ .inputPosition | default `top` }}",
       "data-theme": getGiscusTheme(),
-      "data-lang": "{{ .lang | default $lang }}",
+      "data-lang": "en", //"{{ .lang | default $lang }}",
+      "data-loading": "{{ .loading | default `lazy`}}",
       "crossorigin": "anonymous",
       "async": "",
     };
@@ -48,7 +49,7 @@
     const giscusScript = document.createElement("script");
     Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
     document.getElementById('giscus').appendChild(giscusScript);
-
+    
     // Update giscus theme when theme switcher is clicked
     const toggles = document.querySelectorAll(".theme-toggle");
     if (toggles) {
@@ -57,7 +58,7 @@
   });
 </script>
 
-<div id="giscus"></div>
+<div id="giscus" class="giscus"></div>
 {{- else -}}
   {{ warnf "giscus is not configured" }}
 {{- end -}}
