@@ -2,7 +2,7 @@
 title: Constants
 weight: 1
 prev: /bigquery-utils/modules/utils
-next: /bigquery-utils/modules/utils
+next: /bigquery-utils/modules/utils/custom-data-checks
 cascade:
   type: docs
 ---

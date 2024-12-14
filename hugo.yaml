@@ -15,7 +15,6 @@ outputs:
   home: [HTML]
   page: [HTML]
   section: [HTML, RSS]
-  blog: [HTML, RSS]
 
 markup:
   # allow raw html

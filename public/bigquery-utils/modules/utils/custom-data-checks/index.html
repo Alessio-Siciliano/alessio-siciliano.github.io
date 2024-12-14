@@ -11,30 +11,30 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 
-  <title>Bigquery – Up in Cloud ☁️</title>
-  <meta name="description" content="Introduction The BigQueryClient class is a custom extension of the Google Cloud BigQuery Client. This enhanced client provides additional functionality for managing BigQuery operations more efficiently. It includes built-in methods for managing permissions, handling datasets and tables, and automating common tasks such as loading data, exporting tables, and simulating queries.
-Class Initialization This constructor initializes the BigQueryClient class, which inherits from the google.cloud.bigquery.Client. It shares the attributes and behavior of the original BigQuery client while enabling customized extensions for easier BigQuery operations." />
+  <title>Custom Data Checks Module Documentation – Up in Cloud ☁️</title>
+  <meta name="description" content="Introduction This module provides a comprehensive set of functions to validate and check the integrity of data in tabular formats such as CSVs. These checks help ensure the correctness of data by validating rows, columns, and specific values against given criteria.
+Key Features Column Validation: Ensures uniform row lengths and column existence. Uniqueness Check: Detects duplicate values in specified columns. Null Checks: Validates that specified columns do not contain null values. Numeric Range Validation: Confirms numeric values fall within a specified range. String Pattern Matching: Verifies strings match a specified regex pattern. Date Format Validation: Ensures dates adhere to a given format. Datatype Validation: Confirms values match the expected datatype. Value Set Check: Ensures values exist within a specified set. Class Initialization To use the CustomDataChecks utilities, you first need to create an instance of the class:" />
 
   
-    <link rel="canonical" href="http://localhost:1313/bigquery-utils/modules/bigquery/" itemprop="url" />
+    <link rel="canonical" href="http://localhost:1313/bigquery-utils/modules/utils/custom-data-checks/" itemprop="url" />
   
 
   
 
-<meta property="og:title" content="Bigquery" />
+<meta property="og:title" content="Custom Data Checks Module Documentation" />
 <meta property="og:description" content="Modern, responsive, batteries-included Hugo theme for creating beautiful static websites." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/bigquery-utils/modules/bigquery/" />
+<meta property="og:url" content="http://localhost:1313/bigquery-utils/modules/utils/custom-data-checks/" />
 
   
-  <meta itemprop="name" content="Bigquery">
-  <meta itemprop="description" content="Introduction The BigQueryClient class is a custom extension of the Google Cloud BigQuery Client. This enhanced client provides additional functionality for managing BigQuery operations more efficiently. It includes built-in methods for managing permissions, handling datasets and tables, and automating common tasks such as loading data, exporting tables, and simulating queries.
-Class Initialization This constructor initializes the BigQueryClient class, which inherits from the google.cloud.bigquery.Client. It shares the attributes and behavior of the original BigQuery client while enabling customized extensions for easier BigQuery operations.">
-  <meta itemprop="wordCount" content="527">
+  <meta itemprop="name" content="Custom Data Checks Module Documentation">
+  <meta itemprop="description" content="Introduction This module provides a comprehensive set of functions to validate and check the integrity of data in tabular formats such as CSVs. These checks help ensure the correctness of data by validating rows, columns, and specific values against given criteria.
+Key Features Column Validation: Ensures uniform row lengths and column existence. Uniqueness Check: Detects duplicate values in specified columns. Null Checks: Validates that specified columns do not contain null values. Numeric Range Validation: Confirms numeric values fall within a specified range. String Pattern Matching: Verifies strings match a specified regex pattern. Date Format Validation: Ensures dates adhere to a given format. Datatype Validation: Confirms values match the expected datatype. Value Set Check: Ensures values exist within a specified set. Class Initialization To use the CustomDataChecks utilities, you first need to create an instance of the class:">
+  <meta itemprop="wordCount" content="650">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Bigquery">
-  <meta name="twitter:description" content="Introduction The BigQueryClient class is a custom extension of the Google Cloud BigQuery Client. This enhanced client provides additional functionality for managing BigQuery operations more efficiently. It includes built-in methods for managing permissions, handling datasets and tables, and automating common tasks such as loading data, exporting tables, and simulating queries.
-Class Initialization This constructor initializes the BigQueryClient class, which inherits from the google.cloud.bigquery.Client. It shares the attributes and behavior of the original BigQuery client while enabling customized extensions for easier BigQuery operations.">
+  <meta name="twitter:title" content="Custom Data Checks Module Documentation">
+  <meta name="twitter:description" content="Introduction This module provides a comprehensive set of functions to validate and check the integrity of data in tabular formats such as CSVs. These checks help ensure the correctness of data by validating rows, columns, and specific values against given criteria.
+Key Features Column Validation: Ensures uniform row lengths and column existence. Uniqueness Check: Detects duplicate values in specified columns. Null Checks: Validates that specified columns do not contain null values. Numeric Range Validation: Confirms numeric values fall within a specified range. String Pattern Matching: Verifies strings match a specified regex pattern. Date Format Validation: Ensures dates adhere to a given format. Datatype Validation: Confirms values match the expected datatype. Value Set Check: Ensures values exist within a specified set. Class Initialization To use the CustomDataChecks utilities, you first need to create an instance of the class:">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -219,10 +219,43 @@ Class Initialization This constructor initializes the BigQueryClient class, whic
               <div class="ltr:hx-pr-0 hx-overflow-hidden">
         <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col open"><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/bigquery-utils/modules/bigquery/"
     
   >Bigquery
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col open"><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/bigquery-utils/modules/datatransfer/"
+    
+  >Datatransfer
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col open"><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/bigquery-utils/modules/utils/"
+    
+  >Utils
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
+    </a>
+              <div class="ltr:hx-pr-0 hx-overflow-hidden">
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/bigquery-utils/modules/utils/constants/"
+    
+  >Constants
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col open"><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
+    href="/bigquery-utils/modules/utils/custom-data-checks/"
+    
+  >Custom Data Checks
     </a>
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
@@ -245,39 +278,6 @@ Class Initialization This constructor initializes the BigQueryClient class, whic
             </li>
           </ul>
   
-              
-            </li><li class="hx-flex hx-flex-col open"><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/bigquery-utils/modules/datatransfer/"
-    
-  >Datatransfer
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/bigquery-utils/modules/utils/"
-    
-  >Utils
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
-    </a>
-              <div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/bigquery-utils/modules/utils/constants/"
-    
-  >Constants
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/bigquery-utils/modules/utils/custom-data-checks/"
-    
-  >Custom Data Checks
-    </a>
               
             </li><li class="hx-flex hx-flex-col "><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -340,7 +340,7 @@ Class Initialization This constructor initializes the BigQueryClient class, whic
     </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
         <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col open"><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/bigquery-utils/modules/bigquery/"
     
   >Bigquery
@@ -354,7 +354,7 @@ Class Initialization This constructor initializes the BigQueryClient class, whic
   >Datatransfer
     </a>
               
-            </li><li class="hx-flex hx-flex-col "><a
+            </li><li class="hx-flex hx-flex-col open"><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/bigquery-utils/modules/utils/"
@@ -371,9 +371,9 @@ Class Initialization This constructor initializes the BigQueryClient class, whic
   >Constants
     </a>
               
-            </li><li class="hx-flex hx-flex-col "><a
+            </li><li class="hx-flex hx-flex-col open"><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+      sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
     href="/bigquery-utils/modules/utils/custom-data-checks/"
     
   >Custom Data Checks
@@ -440,6 +440,10 @@ Class Initialization This constructor initializes the BigQueryClient class, whic
         </a>
       </li>
     <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#key-features">Key Features
+        </a>
+      </li>
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
         <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#class-initialization">Class Initialization
         </a>
       </li>
@@ -448,23 +452,35 @@ Class Initialization This constructor initializes the BigQueryClient class, whic
         </a>
       </li>
     <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check_table_existence">check_table_existence
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check_columns">check_columns
         </a>
       </li>
     <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#load_data_from_csv">load_data_from_csv
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check_unique">check_unique
         </a>
       </li>
     <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#simulate_query">simulate_query
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check_no_nulls">check_no_nulls
         </a>
       </li>
     <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#grant_permission">grant_permission
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check_numeric_range">check_numeric_range
         </a>
       </li>
     <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#export_table">export_table
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check_string_pattern">check_string_pattern
+        </a>
+      </li>
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check_date_format">check_date_format
+        </a>
+      </li>
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check_datatype">check_datatype
+        </a>
+      </li>
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check_in_set">check_in_set
         </a>
       </li></ul><div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400"><button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="hx-transition-all hx-duration-75 hx-opacity-0 hx-text-xs hx-font-medium hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-100 contrast-more:hx-text-gray-800 contrast-more:dark:hx-text-gray-50">
           <span>Scroll to top</span>
@@ -483,230 +499,177 @@ Class Initialization This constructor initializes the BigQueryClient class, whic
         </div><svg class="hx-w-3.5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
         <div class="hx-whitespace-nowrap hx-transition-colors hx-min-w-[24px] hx-overflow-hidden hx-text-ellipsis hover:hx-text-gray-900 dark:hover:hx-text-gray-100">
           <a href="/bigquery-utils/modules/">Modules</a>
-        </div><svg class="hx-w-3.5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx-whitespace-nowrap hx-transition-colors hx-font-medium hx-text-gray-700 contrast-more:hx-font-bold contrast-more:hx-text-current dark:hx-text-gray-100 contrast-more:dark:hx-text-current">Bigquery</div>
+        </div><svg class="hx-w-3.5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        <div class="hx-whitespace-nowrap hx-transition-colors hx-min-w-[24px] hx-overflow-hidden hx-text-ellipsis hover:hx-text-gray-900 dark:hover:hx-text-gray-100">
+          <a href="/bigquery-utils/modules/utils/">Utils</a>
+        </div><svg class="hx-w-3.5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx-whitespace-nowrap hx-transition-colors hx-font-medium hx-text-gray-700 contrast-more:hx-font-bold contrast-more:hx-text-current dark:hx-text-gray-100 contrast-more:dark:hx-text-current">Custom Data Checks</div>
   </div>
 
         <div class="content">
-          <h1>Bigquery</h1>
+          <h1>Custom Data Checks Module Documentation</h1>
           <h2>Introduction<span class="hx-absolute -hx-mt-20" id="introduction"></span>
-    <a href="#introduction" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>The <code>BigQueryClient</code> class is a custom extension of the Google Cloud BigQuery Client. This enhanced client provides additional functionality for managing BigQuery operations more efficiently. It includes built-in methods for managing permissions, handling datasets and tables, and automating common tasks such as loading data, exporting tables, and simulating queries.</p>
+    <a href="#introduction" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>This module provides a comprehensive set of functions to validate and check the integrity of data in tabular formats such as CSVs. These checks help ensure the correctness of data by validating rows, columns, and specific values against given criteria.</p>
+<h3>Key Features<span class="hx-absolute -hx-mt-20" id="key-features"></span>
+    <a href="#key-features" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>Column Validation:</strong> Ensures uniform row lengths and column existence.</li>
+<li><strong>Uniqueness Check:</strong> Detects duplicate values in specified columns.</li>
+<li><strong>Null Checks:</strong> Validates that specified columns do not contain null values.</li>
+<li><strong>Numeric Range Validation:</strong> Confirms numeric values fall within a specified range.</li>
+<li><strong>String Pattern Matching:</strong> Verifies strings match a specified regex pattern.</li>
+<li><strong>Date Format Validation:</strong> Ensures dates adhere to a given format.</li>
+<li><strong>Datatype Validation:</strong> Confirms values match the expected datatype.</li>
+<li><strong>Value Set Check:</strong> Ensures values exist within a specified set.</li>
+</ul>
 <h2>Class Initialization<span class="hx-absolute -hx-mt-20" id="class-initialization"></span>
-    <a href="#class-initialization" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>This constructor initializes the <code>BigQueryClient</code> class, which inherits from the <code>google.cloud.bigquery.Client</code>. It shares the attributes and behavior of the original BigQuery client while enabling customized extensions for easier BigQuery operations.</p>
+    <a href="#class-initialization" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>To use the <code>CustomDataChecks</code> utilities, you first need to create an instance of the class:</p>
+<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+  
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">bigquery_advanced_utils.utils.custom_data_checks</span> <span class="kn">import</span> <span class="n">CustomDataChecks</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">custom_data_checks_util</span> <span class="o">=</span> <span class="n">CustomDataChecks</span><span class="p">()</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+  <button
+    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+    title="Copy code"
+  >
+    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
+    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
+  </button>
+</div>
+
+  
+</div>
+<p>The <code>CustomDataChecks</code> class does not require any parameters during initialization. Once instantiated, you can call its methods for various string manipulation tasks.</p>
+<h2>Methods Overview<span class="hx-absolute -hx-mt-20" id="methods-overview"></span>
+    <a href="#methods-overview" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3><code>check_columns</code><span class="hx-absolute -hx-mt-20" id="check_columns"></span>
+    <a href="#check_columns" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Validates that all rows in a dataset have the same number of columns as the header.</p>
 <h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters"></span>
     <a href="#parameters" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
-<li><code>project_id</code> (str): The project ID associated with the BigQuery client.</li>
-<li><code>credentials</code> (Optional[Credentials]): The credentials used to authenticate the client.</li>
-<li><code>_http</code> (Optional[requests.Session]): The HTTP session to use for requests.</li>
-<li><code>location</code> (Optional[str]): Default geographic location for queries and jobs.</li>
-<li><code>default_query_job_config</code> (Optional[QueryJobConfig]): Default configuration for query jobs.</li>
-<li><code>default_load_job_config</code> (Optional[LoadJobConfig]): Default configuration for load jobs.</li>
-<li><code>client_info</code> (Optional[ClientInfo]): Information about the client.</li>
-<li><code>client_options</code> (Optional[Union[ClientOptions, Dict]]): Additional client options.</li>
+<li><code>idx (int)</code>: Row number.</li>
+<li><code>row (list)</code>: List of values in the row.</li>
+<li><code>header (list)</code>: List of column names.</li>
+<li><code>column_sums (list)</code>: (Unused) Placeholder for memory storage.</li>
 </ul>
-<h4>Example<span class="hx-absolute -hx-mt-20" id="example"></span>
-    <a href="#example" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">BigQueryClient</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="n">project_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">credentials</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Credentials</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">_http</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">location</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">default_query_job_config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">QueryJobConfig</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">default_load_job_config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">LoadJobConfig</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">client_info</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ClientInfo</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">client_options</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">ClientOptions</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<h2>Methods Overview<span class="hx-absolute -hx-mt-20" id="methods-overview"></span>
-    <a href="#methods-overview" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3><code>check_table_existence</code><span class="hx-absolute -hx-mt-20" id="check_table_existence"></span>
-    <a href="#check_table_existence" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>Description<span class="hx-absolute -hx-mt-20" id="description"></span>
-    <a href="#description" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Checks whether a specific table exists within a given dataset.</p>
+<h4>Raises<span class="hx-absolute -hx-mt-20" id="raises"></span>
+    <a href="#raises" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>ValueError</code>: If row lengths do not match the header length.</li>
+</ul>
+<h3><code>check_unique</code><span class="hx-absolute -hx-mt-20" id="check_unique"></span>
+    <a href="#check_unique" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Ensures specified columns contain unique values across all rows.</p>
 <h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-1"></span>
     <a href="#parameters-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
-<li><code>dataset_id</code> (str): The ID of the dataset to check.</li>
-<li><code>table_id</code> (str): The ID of the table to check.</li>
+<li><code>idx (int)</code>: Row number.</li>
+<li><code>row (list)</code>: List of values in the row.</li>
+<li><code>header (list)</code>: List of column names.</li>
+<li><code>column_sums (list)</code>: List of sets for tracking seen values per column.</li>
+<li><code>columns_to_test (list, optional)</code>: Columns to validate for uniqueness.</li>
 </ul>
-<h4>Example<span class="hx-absolute -hx-mt-20" id="example-1"></span>
-    <a href="#example-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">exists</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">check_table_existence</span><span class="p">(</span><span class="s2">&#34;my_dataset&#34;</span><span class="p">,</span> <span class="s2">&#34;my_table&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Table exists: </span><span class="si">{</span><span class="n">exists</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<h3><code>load_data_from_csv</code><span class="hx-absolute -hx-mt-20" id="load_data_from_csv"></span>
-    <a href="#load_data_from_csv" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>Description<span class="hx-absolute -hx-mt-20" id="description-1"></span>
-    <a href="#description-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Loads data from a CSV file into a specified BigQuery table. Optionally applies validation tests (custom or not) to the data.</p>
+<h4>Raises<span class="hx-absolute -hx-mt-20" id="raises-1"></span>
+    <a href="#raises-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>ValueError</code>: If duplicate values are detected.</li>
+</ul>
+<h3><code>check_no_nulls</code><span class="hx-absolute -hx-mt-20" id="check_no_nulls"></span>
+    <a href="#check_no_nulls" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Validates that specified columns do not contain null or empty values.</p>
 <h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-2"></span>
     <a href="#parameters-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
-<li><code>dataset_id</code> (str): The destination dataset ID.</li>
-<li><code>table_id</code> (str): The destination table ID.</li>
-<li><code>csv_file_path</code> (str): Path to the CSV file.</li>
-<li><code>test_functions</code> (Optional[list]): A list of validation functions applied to the data. For the full list of predefined test (See the <a href="/bigquery-advanced-utils/modules/custom_data_checks" >Custom checks class</a> page for more details.)</li>
-<li><code>encoding</code> (str): The file encoding (default is UTF-8).</li>
+<li><code>idx</code> (int): Row number.</li>
+<li><code>row</code> (list): List of values in the row.</li>
+<li><code>header</code> (list): List of column names.</li>
+<li><code>column_sums</code> (list): (Unused) Placeholder for memory storage.</li>
+<li><code>columns_to_test</code> (list, optional): Columns to check for null values.</li>
 </ul>
-<h4>Example<span class="hx-absolute -hx-mt-20" id="example-2"></span>
-    <a href="#example-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">custom_test</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">header</span><span class="p">,</span> <span class="n">column_sums</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">header</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Row </span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2"> does not match header length.&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">data_checks</span> <span class="o">=</span> <span class="n">CustomDataChecks</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">client</span><span class="o">.</span><span class="n">load_data_from_csv</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dataset_id</span><span class="o">=</span><span class="s2">&#34;my_dataset&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">table_id</span><span class="o">=</span><span class="s2">&#34;my_table&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">csv_file_path</span><span class="o">=</span><span class="s2">&#34;data.csv&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">test_functions</span><span class="o">=</span><span class="p">[</span>
-</span></span><span class="line"><span class="cl">      <span class="n">custom_test</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="n">partial</span><span class="p">(</span><span class="n">data_checks</span><span class="o">.</span><span class="n">check_columns</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">      <span class="n">partial</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">        <span class="n">data_checks</span><span class="o">.</span><span class="n">check_unique</span><span class="p">,</span> <span class="n">columns_to_test</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;col1&#34;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">      <span class="p">),</span>
-</span></span><span class="line"><span class="cl">      <span class="o">...</span>
-</span></span><span class="line"><span class="cl">    <span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<h3><code>simulate_query</code><span class="hx-absolute -hx-mt-20" id="simulate_query"></span>
-    <a href="#simulate_query" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>Description<span class="hx-absolute -hx-mt-20" id="description-2"></span>
-    <a href="#description-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Simulates a query execution to estimate resource usage and provides metadata such as schema and referenced tables.</p>
+<h4>Raises<span class="hx-absolute -hx-mt-20" id="raises-2"></span>
+    <a href="#raises-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>ValueError</code>: If null values are found.</li>
+</ul>
+<h3><code>check_numeric_range</code><span class="hx-absolute -hx-mt-20" id="check_numeric_range"></span>
+    <a href="#check_numeric_range" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Ensures numeric values in specified columns fall within a defined range. Allows null values.</p>
 <h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-3"></span>
     <a href="#parameters-3" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
-<li><code>query</code> (str): The SQL query to simulate.</li>
+<li><code>idx</code> (int): Row number.</li>
+<li><code>row</code> (list): List of values in the row.</li>
+<li><code>header</code> (list): List of column names.</li>
+<li><code>column_sums</code> (list): (Unused) Placeholder for memory storage.</li>
+<li><code>columns_to_test</code> (list, optional): Columns to check for numeric range.</li>
+<li><code>min_value</code> (int|float, optional): Minimum allowed value.</li>
+<li><code>max_value</code> (int|float, optional): Maximum allowed value.</li>
 </ul>
-<h4>Returns<span class="hx-absolute -hx-mt-20" id="returns"></span>
-    <a href="#returns" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
-<li><code>dict</code>: Metadata about the query execution, including schema, referenced tables, and bytes processed.</li>
+<h4>Raises<span class="hx-absolute -hx-mt-20" id="raises-3"></span>
+    <a href="#raises-3" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>ValueError</code>: If values fall outside the specified range.</li>
 </ul>
-<h4>Example<span class="hx-absolute -hx-mt-20" id="example-3"></span>
-    <a href="#example-3" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">simulation</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">simulate_query</span><span class="p">(</span><span class="s2">&#34;SELECT * FROM `my_project.my_dataset.my_table` LIMIT 10&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<h3><code>grant_permission</code><span class="hx-absolute -hx-mt-20" id="grant_permission"></span>
-    <a href="#grant_permission" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>Description<span class="hx-absolute -hx-mt-20" id="description-3"></span>
-    <a href="#description-3" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Manages permissions (add, remove, or update) for users on a BigQuery table or dataset.</p>
+<h3><code>check_string_pattern</code><span class="hx-absolute -hx-mt-20" id="check_string_pattern"></span>
+    <a href="#check_string_pattern" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Validates that values in specified columns match a given regex pattern. Allows null values.</p>
 <h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-4"></span>
     <a href="#parameters-4" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
-<li><code>resource_id</code> (str): The resource ID in the format project_id.dataset_id (if dataset) or project_id.dataset_id.table_id (if table).</li>
-<li><code>user_permissions</code> (List[Dict[str, str]]): A list of dictionaries containing user_email and role.</li>
-<li><code>action</code> (str): The action to perform (add, remove, or update).</li>
+<li><code>idx</code> (int): Row number.</li>
+<li><code>row</code> (list): List of values in the row.</li>
+<li><code>header</code> (list): List of column names.</li>
+<li><code>column_sums</code> (list): (Unused) Placeholder for memory storage.</li>
+<li><code>columns_to_test</code> (list, optional): Columns to validate.</li>
+<li><code>regex_pattern</code> (str): Regular expression to match.</li>
 </ul>
-<h4>Example<span class="hx-absolute -hx-mt-20" id="example-4"></span>
-    <a href="#example-4" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">permissions</span> <span class="o">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="s2">&#34;user_email&#34;</span><span class="p">:</span> <span class="s2">&#34;user@example.com&#34;</span><span class="p">,</span> <span class="s2">&#34;role&#34;</span><span class="p">:</span> <span class="s2">&#34;READER&#34;</span><span class="p">},</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="s2">&#34;user_email&#34;</span><span class="p">:</span> <span class="s2">&#34;admin@example.com&#34;</span><span class="p">,</span> <span class="s2">&#34;role&#34;</span><span class="p">:</span> <span class="s2">&#34;OWNER&#34;</span><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">client</span><span class="o">.</span><span class="n">grant_permission</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="n">resource_id</span><span class="o">=</span><span class="s2">&#34;my_project.my_dataset&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">user_permissions</span><span class="o">=</span><span class="n">permissions</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">action</span><span class="o">=</span><span class="s2">&#34;add&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
-<h3><code>export_table</code><span class="hx-absolute -hx-mt-20" id="export_table"></span>
-    <a href="#export_table" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>Description<span class="hx-absolute -hx-mt-20" id="description-4"></span>
-    <a href="#description-4" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Exports a BigQuery table to a specified format (e.g., CSV, JSON) to Cloud Storage.</p>
+<h4>Raises<span class="hx-absolute -hx-mt-20" id="raises-4"></span>
+    <a href="#raises-4" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>ValueError</code>: If values do not match the regex pattern.</li>
+</ul>
+<h3><code>check_date_format</code><span class="hx-absolute -hx-mt-20" id="check_date_format"></span>
+    <a href="#check_date_format" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Ensures dates in specified columns match a given date format. Allows null values.</p>
 <h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-5"></span>
     <a href="#parameters-5" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
-<li><code>dataset_id</code> (str): The ID of the dataset.</li>
-<li><code>table_id</code> (str): The ID of the table.</li>
-<li><code>destination</code> (str): The destination path (e.g., <code>gs://bucket_name/file</code>).</li>
-<li><code>output_file_format</code> (OutputFileFormat): The format of the exported file (<code>CSV</code>, <code>JSON</code>, or <code>AVRO</code>).</li>
-<li><code>compression</code> (Literal): Compression type (<code>GZIP</code>, <code>DEFLATE</code>, <code>SNAPPY</code>, or <code>NONE</code>).</li>
+<li><code>idx</code> (int): Row number.</li>
+<li><code>row</code> (list): List of values in the row.</li>
+<li><code>header</code> (list): List of column names.</li>
+<li><code>column_sums</code> (list): (Unused) Placeholder for memory storage.</li>
+<li><code>columns_to_test</code> (list, optional): Columns to validate.</li>
+<li><code>date_format</code> (str): Expected date format (default: <code>%Y-%m-%d</code>).</li>
 </ul>
-<h4>Example<span class="hx-absolute -hx-mt-20" id="example-5"></span>
-    <a href="#example-5" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-  
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">client</span><span class="o">.</span><span class="n">export_table</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dataset_id</span><span class="o">=</span><span class="s2">&#34;my_dataset&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">table_id</span><span class="o">=</span><span class="s2">&#34;my_table&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">destination</span><span class="o">=</span><span class="s2">&#34;gs://my_bucket/my_table.csv&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">output_file_format</span><span class="o">=</span><span class="s2">&#34;CSV&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="n">compression</span><span class="o">=</span><span class="s2">&#34;GZIP&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
-  <button
-    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
-    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
-  </button>
-</div>
-
-  
-</div>
+<h4>Raises<span class="hx-absolute -hx-mt-20" id="raises-5"></span>
+    <a href="#raises-5" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>ValueError</code>: If values do not match the date format.</li>
+</ul>
+<h3><code>check_datatype</code><span class="hx-absolute -hx-mt-20" id="check_datatype"></span>
+    <a href="#check_datatype" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Validates that values in specified columns match the expected datatype. Allows null values.</p>
+<h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-6"></span>
+    <a href="#parameters-6" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>idx</code> (int): Row number.</li>
+<li><code>row</code> (list): List of values in the row.</li>
+<li><code>header</code> (list): List of column names.</li>
+<li><code>column_sums</code> (list): (Unused) Placeholder for memory storage.</li>
+<li><code>columns_to_test</code> (list, optional): Columns to validate.</li>
+<li><code>expected_datatype</code> (type): Expected datatype (e.g., <code>int</code>, <code>float</code>).</li>
+</ul>
+<h4>Raises<span class="hx-absolute -hx-mt-20" id="raises-6"></span>
+    <a href="#raises-6" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>ValueError</code>: If values do not match the expected datatype.</li>
+</ul>
+<h3><code>check_in_set</code><span class="hx-absolute -hx-mt-20" id="check_in_set"></span>
+    <a href="#check_in_set" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Ensures values in specified columns are within a predefined set.</p>
+<h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-7"></span>
+    <a href="#parameters-7" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>idx</code> (int): Row number.</li>
+<li><code>row</code> (list): List of values in the row.</li>
+<li><code>header</code> (list): List of column names.</li>
+<li><code>column_sums</code> (list): (Unused) Placeholder for memory storage.</li>
+<li><code>columns_to_test</code> (list, optional): Columns to validate.</li>
+<li><code>valid_values_set</code> (list): Allowed values for validation.</li>
+</ul>
+<h4>Raises<span class="hx-absolute -hx-mt-20" id="raises-7"></span>
+    <a href="#raises-7" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>ValueError</code>: If values are not in the allowed set.</li>
+</ul>
 
         </div>
         <div class="hx-mt-16"></div>
         <div class="hx-mb-8 hx-flex hx-items-center hx-border-t hx-pt-8 dark:hx-border-neutral-800 contrast-more:hx-border-neutral-400 dark:contrast-more:hx-border-neutral-400 print:hx-hidden"><a
-        href="/bigquery-utils/modules/"
-        title="Modules"
+        href="/bigquery-utils/modules/utils/constants/"
+        title="Constants"
         class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-pr-4 rtl:hx-pl-4"
-      ><svg class="hx-inline hx-h-5 hx-shrink-0 ltr:hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Modules</a><a
-        href="/bigquery-utils/modules/datatransfer/"
-        title="Datatransfer"
+      ><svg class="hx-inline hx-h-5 hx-shrink-0 ltr:hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Constants</a><a
+        href="/bigquery-utils/modules/utils/numeric/"
+        title="Numeric"
         class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-ml-auto ltr:hx-pl-4 ltr:hx-text-right rtl:hx-mr-auto rtl:hx-pr-4 rtl:hx-text-left"
-      >Datatransfer<svg class="hx-inline hx-h-5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
+      >Numeric<svg class="hx-inline hx-h-5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
         <script>
   
 

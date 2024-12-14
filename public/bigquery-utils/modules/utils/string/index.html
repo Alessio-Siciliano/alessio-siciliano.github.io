@@ -11,8 +11,9 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 
-  <title>String – Up in Cloud ☁️</title>
-  <meta name="description" content="b" />
+  <title>String Manipulation Utilities Documentation – Up in Cloud ☁️</title>
+  <meta name="description" content="Introduction This Python module provides a set of utility functions to manipulate strings, making it easier to handle text processing tasks such as cleaning strings, removing comments, and extracting tables from queries. These utilities are part of the bigquery-advanced-utils package and aim to simplify text processing in data workflows.
+Class Initialization To use the String utilities, you first need to create an instance of the class:" />
 
   
     <link rel="canonical" href="http://localhost:1313/bigquery-utils/modules/utils/string/" itemprop="url" />
@@ -20,18 +21,20 @@
 
   
 
-<meta property="og:title" content="String" />
+<meta property="og:title" content="String Manipulation Utilities Documentation" />
 <meta property="og:description" content="Modern, responsive, batteries-included Hugo theme for creating beautiful static websites." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/bigquery-utils/modules/utils/string/" />
 
   
-  <meta itemprop="name" content="String">
-  <meta itemprop="description" content="b">
-  <meta itemprop="wordCount" content="1">
+  <meta itemprop="name" content="String Manipulation Utilities Documentation">
+  <meta itemprop="description" content="Introduction This Python module provides a set of utility functions to manipulate strings, making it easier to handle text processing tasks such as cleaning strings, removing comments, and extracting tables from queries. These utilities are part of the bigquery-advanced-utils package and aim to simplify text processing in data workflows.
+Class Initialization To use the String utilities, you first need to create an instance of the class:">
+  <meta itemprop="wordCount" content="362">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="String">
-  <meta name="twitter:description" content="b">
+  <meta name="twitter:title" content="String Manipulation Utilities Documentation">
+  <meta name="twitter:description" content="Introduction This Python module provides a set of utility functions to manipulate strings, making it easier to handle text processing tasks such as cleaning strings, removing comments, and extracting tables from queries. These utilities are part of the bigquery-advanced-utils package and aim to simplify text processing in data workflows.
+Class Initialization To use the String utilities, you first need to create an instance of the class:">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -247,6 +250,22 @@
   >Constants
     </a>
               
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/bigquery-utils/modules/utils/custom-data-checks/"
+    
+  >Custom Data Checks
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/bigquery-utils/modules/utils/numeric/"
+    
+  >Numeric
+    </a>
+              
             </li><li class="hx-flex hx-flex-col open"><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
@@ -255,17 +274,29 @@
   >String
     </a>
   
+    <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
+              <a
+                href="#introduction"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Introduction</a>
+            </li>
+          <li>
+              <a
+                href="#class-initialization"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Class Initialization</a>
+            </li>
+          <li>
+              <a
+                href="#methods-overview"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Methods Overview</a>
+            </li>
+          </ul>
+  
               
             </li></ul>
       </div>
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/bigquery-utils/modules/custom_data_checks/"
-    
-  >Custom data checks
-    </a>
-              
             </li></ul>
       </div>
             </li></ul>
@@ -340,6 +371,22 @@
   >Constants
     </a>
               
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/bigquery-utils/modules/utils/custom-data-checks/"
+    
+  >Custom Data Checks
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/bigquery-utils/modules/utils/numeric/"
+    
+  >Numeric
+    </a>
+              
             </li><li class="hx-flex hx-flex-col open"><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
@@ -350,14 +397,6 @@
               
             </li></ul>
       </div>
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/bigquery-utils/modules/custom_data_checks/"
-    
-  >Custom data checks
-    </a>
-              
             </li></ul>
       </div></li>
         
@@ -394,7 +433,32 @@
 </button>
 </div></div></aside>
     <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
-    <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><div class=" hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400"><button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="hx-transition-all hx-duration-75 hx-opacity-0 hx-text-xs hx-font-medium hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-100 contrast-more:hx-text-gray-800 contrast-more:dark:hx-text-gray-50">
+    <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
+              
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#introduction">Introduction
+        </a>
+      </li>
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#class-initialization">Class Initialization
+        </a>
+      </li>
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#methods-overview">Methods Overview
+        </a>
+      </li>
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#remove_chars_from_string">remove_chars_from_string
+        </a>
+      </li>
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#remove_comments_from_string">remove_comments_from_string
+        </a>
+      </li>
+    <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#extract_tables_from_query">extract_tables_from_query
+        </a>
+      </li></ul><div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400"><button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="hx-transition-all hx-duration-75 hx-opacity-0 hx-text-xs hx-font-medium hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-100 contrast-more:hx-text-gray-800 contrast-more:dark:hx-text-gray-50">
           <span>Scroll to top</span>
         </button>
       </div>
@@ -418,20 +482,158 @@
   </div>
 
         <div class="content">
-          <h1>String</h1>
-          <p>b</p>
+          <h1>String Manipulation Utilities Documentation</h1>
+          <h2>Introduction<span class="hx-absolute -hx-mt-20" id="introduction"></span>
+    <a href="#introduction" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>This Python module provides a set of utility functions to manipulate strings, making it easier to handle text processing tasks such as cleaning strings, removing comments, and extracting tables from queries. These utilities are part of the <code>bigquery-advanced-utils</code> package and aim to simplify text processing in data workflows.</p>
+<h2>Class Initialization<span class="hx-absolute -hx-mt-20" id="class-initialization"></span>
+    <a href="#class-initialization" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>To use the <code>String</code> utilities, you first need to create an instance of the class:</p>
+<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+  
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">bigquery_advanced_utils.utils.string</span> <span class="kn">import</span> <span class="n">String</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">string_utils</span> <span class="o">=</span> <span class="n">String</span><span class="p">()</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+  <button
+    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+    title="Copy code"
+  >
+    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
+    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
+  </button>
+</div>
+
+  
+</div>
+<p>The <code>String</code> class does not require any parameters during initialization. Once instantiated, you can call its methods for various string manipulation tasks.</p>
+<h2>Methods Overview<span class="hx-absolute -hx-mt-20" id="methods-overview"></span>
+    <a href="#methods-overview" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3><code>remove_chars_from_string</code><span class="hx-absolute -hx-mt-20" id="remove_chars_from_string"></span>
+    <a href="#remove_chars_from_string" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>Description<span class="hx-absolute -hx-mt-20" id="description"></span>
+    <a href="#description" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Removes specific characters from a given string.</p>
+<h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters"></span>
+    <a href="#parameters" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>string</code> (str): The input string to process.</li>
+<li><code>chars_to_remove</code> (list[str]): A list of characters to remove from the input string.</li>
+</ul>
+<h4>Returns<span class="hx-absolute -hx-mt-20" id="returns"></span>
+    <a href="#returns" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>str</code>: A new string with the specified characters removed.</li>
+</ul>
+<h4>Raises<span class="hx-absolute -hx-mt-20" id="raises"></span>
+    <a href="#raises" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>InvalidArgumentToFunction</code>: If the input parameters are invalid (e.g., <code>string</code> is <code>None</code>, or <code>chars_to_remove</code> is not a non-empty list).</li>
+</ul>
+<h4>Example<span class="hx-absolute -hx-mt-20" id="example"></span>
+    <a href="#example" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+  
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">bigquery_advanced_utils.utils.string</span> <span class="kn">import</span> <span class="n">String</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">string_utils</span> <span class="o">=</span> <span class="n">String</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">input_string</span> <span class="o">=</span> <span class="s2">&#34;Hello, World!&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">chars_to_remove</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;,&#34;</span><span class="p">,</span> <span class="s2">&#34;!&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cleaned_string</span> <span class="o">=</span> <span class="n">string_utils</span><span class="o">.</span><span class="n">remove_chars_from_string</span><span class="p">(</span><span class="n">input_string</span><span class="p">,</span> <span class="n">chars_to_remove</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">cleaned_string</span><span class="p">)</span>  <span class="c1"># Output: &#34;Hello World&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="n">InvalidArgumentToFunction</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Invalid arguments provided to the function.&#34;</span><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+  <button
+    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+    title="Copy code"
+  >
+    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
+    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
+  </button>
+</div>
+
+  
+</div>
+<h3><code>remove_comments_from_string</code><span class="hx-absolute -hx-mt-20" id="remove_comments_from_string"></span>
+    <a href="#remove_comments_from_string" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>Description<span class="hx-absolute -hx-mt-20" id="description-1"></span>
+    <a href="#description-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Removes all comments from a given string based on the specified dialect (default is <code>standard_sql</code>).</p>
+<h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-1"></span>
+    <a href="#parameters-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>string</code> (str): The input string, typically a SQL query.</li>
+<li><code>dialect</code> (str): The dialect to use for identifying comments. Default is <code>standard_sql</code>.</li>
+</ul>
+<h4>Returns<span class="hx-absolute -hx-mt-20" id="returns-1"></span>
+    <a href="#returns-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>str</code>: The string with all comments removed.</li>
+</ul>
+<h4>Raises<span class="hx-absolute -hx-mt-20" id="raises-1"></span>
+    <a href="#raises-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>InvalidArgumentToFunction</code>: If the input parameters are invalid (e.g., <code>string</code> is <code>None</code>).</li>
+</ul>
+<h4>Example<span class="hx-absolute -hx-mt-20" id="example-1"></span>
+    <a href="#example-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+  
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">input_query</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;SELECT * FROM table -- This is a comment
+</span></span></span><span class="line"><span class="cl"><span class="s2">WHERE id = 1;&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cleaned_query</span> <span class="o">=</span> <span class="n">string_utils</span><span class="o">.</span><span class="n">remove_comments_from_string</span><span class="p">(</span><span class="n">input_query</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">cleaned_query</span><span class="p">)</span>  <span class="c1"># Output: &#34;SELECT * FROM table WHERE id = 1;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="n">InvalidArgumentToFunction</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Invalid arguments provided to the function.&#34;</span><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+  <button
+    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+    title="Copy code"
+  >
+    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
+    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
+  </button>
+</div>
+
+  
+</div>
+<h3><code>extract_tables_from_query</code><span class="hx-absolute -hx-mt-20" id="extract_tables_from_query"></span>
+    <a href="#extract_tables_from_query" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>Description<span class="hx-absolute -hx-mt-20" id="description-2"></span>
+    <a href="#description-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Extracts all table names from a SQL query string.</p>
+<h4>Parameters<span class="hx-absolute -hx-mt-20" id="parameters-2"></span>
+    <a href="#parameters-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>string</code> (str): The input SQL query string.</li>
+</ul>
+<h4>Returns<span class="hx-absolute -hx-mt-20" id="returns-2"></span>
+    <a href="#returns-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>list[str]</code>: A list of unique table names extracted from the query.</li>
+</ul>
+<h4>Raises<span class="hx-absolute -hx-mt-20" id="raises-2"></span>
+    <a href="#raises-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><code>InvalidArgumentToFunction</code>: If the input string is <code>None</code>.</li>
+</ul>
+<h4>Example:<span class="hx-absolute -hx-mt-20" id="example-2"></span>
+    <a href="#example-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+  
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">query</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;SELECT * FROM `project.dataset.table` JOIN `project.dataset.table2` ON id = id
+</span></span></span><span class="line"><span class="cl"><span class="s2">-- Commented out code
+</span></span></span><span class="line"><span class="cl"><span class="s2">WHERE condition;&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tables</span> <span class="o">=</span> <span class="n">string_utils</span><span class="o">.</span><span class="n">extract_tables_from_query</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">tables</span><span class="p">)</span>  <span class="c1"># Output: [&#34;project.dataset.table&#34;, &#34;project.dataset.table2&#34;]</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="n">InvalidArgumentToFunction</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Invalid arguments provided to the function.&#34;</span><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+  <button
+    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+    title="Copy code"
+  >
+    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
+    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
+  </button>
+</div>
+
+  
+</div>
 
         </div>
         <div class="hx-mt-16"></div>
         <div class="hx-mb-8 hx-flex hx-items-center hx-border-t hx-pt-8 dark:hx-border-neutral-800 contrast-more:hx-border-neutral-400 dark:contrast-more:hx-border-neutral-400 print:hx-hidden"><a
-        href="/bigquery-utils/modules/utils/"
-        title="Utils"
+        href="/bigquery-utils/modules/utils/numeric/"
+        title="Numeric"
         class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-pr-4 rtl:hx-pl-4"
-      ><svg class="hx-inline hx-h-5 hx-shrink-0 ltr:hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Utils</a><a
-        href="/bigquery-utils/modules/utils/"
-        title="Utils"
-        class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-ml-auto ltr:hx-pl-4 ltr:hx-text-right rtl:hx-mr-auto rtl:hx-pr-4 rtl:hx-text-left"
-      >Utils<svg class="hx-inline hx-h-5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
+      ><svg class="hx-inline hx-h-5 hx-shrink-0 ltr:hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Numeric</a></div>
         <script>
   
 

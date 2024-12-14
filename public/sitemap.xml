@@ -8,13 +8,15 @@
   </url><url>
     <loc>http://localhost:1313/bigquery-utils/getting-started/</loc>
   </url><url>
+    <loc>http://localhost:1313/bigquery-utils/modules/utils/custom-data-checks/</loc>
+  </url><url>
     <loc>http://localhost:1313/bigquery-utils/modules/datatransfer/</loc>
   </url><url>
     <loc>http://localhost:1313/bigquery-utils/modules/</loc>
   </url><url>
-    <loc>http://localhost:1313/bigquery-utils/modules/utils/</loc>
+    <loc>http://localhost:1313/bigquery-utils/modules/utils/numeric/</loc>
   </url><url>
-    <loc>http://localhost:1313/bigquery-utils/modules/custom_data_checks/</loc>
+    <loc>http://localhost:1313/bigquery-utils/modules/utils/</loc>
   </url><url>
     <loc>http://localhost:1313/bigquery-utils/modules/utils/string/</loc>
   </url><url>

@@ -221,7 +221,243 @@ Message used for unhandled exceptions in the application.&lt;/li&gt;
     </item>
     
     <item>
-      <title>String</title>
+      <title>Custom Data Checks Module Documentation</title>
+      <link>http://localhost:1313/bigquery-utils/modules/utils/custom-data-checks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/bigquery-utils/modules/utils/custom-data-checks/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Introduction&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;introduction&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#introduction&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This module provides a comprehensive set of functions to validate and check the integrity of data in tabular formats such as CSVs. These checks help ensure the correctness of data by validating rows, columns, and specific values against given criteria.&lt;/p&gt;
+&lt;h3&gt;Key Features&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Column Validation:&lt;/strong&gt; Ensures uniform row lengths and column existence.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Uniqueness Check:&lt;/strong&gt; Detects duplicate values in specified columns.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Null Checks:&lt;/strong&gt; Validates that specified columns do not contain null values.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Numeric Range Validation:&lt;/strong&gt; Confirms numeric values fall within a specified range.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;String Pattern Matching:&lt;/strong&gt; Verifies strings match a specified regex pattern.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Date Format Validation:&lt;/strong&gt; Ensures dates adhere to a given format.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Datatype Validation:&lt;/strong&gt; Confirms values match the expected datatype.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Value Set Check:&lt;/strong&gt; Ensures values exist within a specified set.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Class Initialization&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;class-initialization&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#class-initialization&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;To use the &lt;code&gt;CustomDataChecks&lt;/code&gt; utilities, you first need to create an instance of the class:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;bigquery_advanced_utils.utils.custom_data_checks&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;CustomDataChecks&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;custom_data_checks_util&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;CustomDataChecks&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;CustomDataChecks&lt;/code&gt; class does not require any parameters during initialization. Once instantiated, you can call its methods for various string manipulation tasks.&lt;/p&gt;
+&lt;h2&gt;Methods Overview&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;methods-overview&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#methods-overview&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;code&gt;check_columns&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;check_columns&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#check_columns&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Validates that all rows in a dataset have the same number of columns as the header.&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;idx (int)&lt;/code&gt;: Row number.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;row (list)&lt;/code&gt;: List of values in the row.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;header (list)&lt;/code&gt;: List of column names.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;column_sums (list)&lt;/code&gt;: (Unused) Placeholder for memory storage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ValueError&lt;/code&gt;: If row lengths do not match the header length.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;check_unique&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;check_unique&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#check_unique&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Ensures specified columns contain unique values across all rows.&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;idx (int)&lt;/code&gt;: Row number.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;row (list)&lt;/code&gt;: List of values in the row.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;header (list)&lt;/code&gt;: List of column names.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;column_sums (list)&lt;/code&gt;: List of sets for tracking seen values per column.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;columns_to_test (list, optional)&lt;/code&gt;: Columns to validate for uniqueness.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ValueError&lt;/code&gt;: If duplicate values are detected.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;check_no_nulls&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;check_no_nulls&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#check_no_nulls&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Validates that specified columns do not contain null or empty values.&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;idx&lt;/code&gt; (int): Row number.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;row&lt;/code&gt; (list): List of values in the row.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;header&lt;/code&gt; (list): List of column names.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;column_sums&lt;/code&gt; (list): (Unused) Placeholder for memory storage.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;columns_to_test&lt;/code&gt; (list, optional): Columns to check for null values.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ValueError&lt;/code&gt;: If null values are found.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;check_numeric_range&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;check_numeric_range&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#check_numeric_range&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Ensures numeric values in specified columns fall within a defined range. Allows null values.&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters-3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters-3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;idx&lt;/code&gt; (int): Row number.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;row&lt;/code&gt; (list): List of values in the row.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;header&lt;/code&gt; (list): List of column names.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;column_sums&lt;/code&gt; (list): (Unused) Placeholder for memory storage.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;columns_to_test&lt;/code&gt; (list, optional): Columns to check for numeric range.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;min_value&lt;/code&gt; (int|float, optional): Minimum allowed value.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;max_value&lt;/code&gt; (int|float, optional): Maximum allowed value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises-3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises-3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ValueError&lt;/code&gt;: If values fall outside the specified range.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;check_string_pattern&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;check_string_pattern&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#check_string_pattern&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Validates that values in specified columns match a given regex pattern. Allows null values.&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters-4&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters-4&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;idx&lt;/code&gt; (int): Row number.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;row&lt;/code&gt; (list): List of values in the row.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;header&lt;/code&gt; (list): List of column names.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;column_sums&lt;/code&gt; (list): (Unused) Placeholder for memory storage.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;columns_to_test&lt;/code&gt; (list, optional): Columns to validate.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;regex_pattern&lt;/code&gt; (str): Regular expression to match.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises-4&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises-4&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ValueError&lt;/code&gt;: If values do not match the regex pattern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;check_date_format&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;check_date_format&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#check_date_format&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Ensures dates in specified columns match a given date format. Allows null values.&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters-5&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters-5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;idx&lt;/code&gt; (int): Row number.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;row&lt;/code&gt; (list): List of values in the row.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;header&lt;/code&gt; (list): List of column names.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;column_sums&lt;/code&gt; (list): (Unused) Placeholder for memory storage.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;columns_to_test&lt;/code&gt; (list, optional): Columns to validate.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date_format&lt;/code&gt; (str): Expected date format (default: &lt;code&gt;%Y-%m-%d&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises-5&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises-5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ValueError&lt;/code&gt;: If values do not match the date format.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;check_datatype&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;check_datatype&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#check_datatype&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Validates that values in specified columns match the expected datatype. Allows null values.&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters-6&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters-6&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;idx&lt;/code&gt; (int): Row number.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;row&lt;/code&gt; (list): List of values in the row.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;header&lt;/code&gt; (list): List of column names.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;column_sums&lt;/code&gt; (list): (Unused) Placeholder for memory storage.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;columns_to_test&lt;/code&gt; (list, optional): Columns to validate.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;expected_datatype&lt;/code&gt; (type): Expected datatype (e.g., &lt;code&gt;int&lt;/code&gt;, &lt;code&gt;float&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises-6&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises-6&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ValueError&lt;/code&gt;: If values do not match the expected datatype.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;code&gt;check_in_set&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;check_in_set&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#check_in_set&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Ensures values in specified columns are within a predefined set.&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters-7&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters-7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;idx&lt;/code&gt; (int): Row number.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;row&lt;/code&gt; (list): List of values in the row.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;header&lt;/code&gt; (list): List of column names.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;column_sums&lt;/code&gt; (list): (Unused) Placeholder for memory storage.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;columns_to_test&lt;/code&gt; (list, optional): Columns to validate.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;valid_values_set&lt;/code&gt; (list): Allowed values for validation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises-7&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises-7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ValueError&lt;/code&gt;: If values are not in the allowed set.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Numeric Utilities Documentation</title>
+      <link>http://localhost:1313/bigquery-utils/modules/utils/numeric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/bigquery-utils/modules/utils/numeric/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Introduction&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;introduction&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#introduction&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This module provides a set of utility functions for numeric variables. The &lt;code&gt;Numeric&lt;/code&gt; class simplifies operations involving numeric conversions, particularly in the context of byte size transformations into human-readable units.&lt;/p&gt;
+&lt;h2&gt;Class Initialization&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;class-initialization&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#class-initialization&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;To use the &lt;code&gt;Numeric&lt;/code&gt; utilities, you need to create an instance of the class:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;numeric_utils&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Numeric&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;Numeric&lt;/code&gt; class does not require any parameters during initialization. Once instantiated, you can call its methods for various numeric conversions.&lt;/p&gt;
+&lt;h2&gt;Methods Overview&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;methods-overview&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#methods-overview&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;code&gt;convert_bytes_to_unit&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;convert_bytes_to_unit&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#convert_bytes_to_unit&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Description&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;description&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#description&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Converts a number of bytes into a specified unit (e.g., KB, MB, GB, TB).&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;byte_count&lt;/code&gt; (int): The number of bytes to convert.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unit&lt;/code&gt; (str): The target unit. Supported values are &lt;code&gt;&amp;quot;KB&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;MB&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;GB&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;TB&amp;quot;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Returns&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;returns&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#returns&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;float&lt;/code&gt;: The byte count converted to the specified unit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ValueError&lt;/code&gt;: If an unsupported unit is provided.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Example&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;numeric_utils&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Numeric&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;size_in_gb&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;numeric_utils&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;convert_bytes_to_unit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1073741824&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;GB&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;size_in_gb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# Output: 1.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;except&lt;/span&gt; &lt;span class=&#34;ne&#34;&gt;ValueError&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Error: &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>String Manipulation Utilities Documentation</title>
       <link>http://localhost:1313/bigquery-utils/modules/utils/string/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -229,7 +465,149 @@ Message used for unhandled exceptions in the application.&lt;/li&gt;
       <description>
         
         
-        &lt;p&gt;b&lt;/p&gt;
+        &lt;h2&gt;Introduction&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;introduction&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#introduction&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This Python module provides a set of utility functions to manipulate strings, making it easier to handle text processing tasks such as cleaning strings, removing comments, and extracting tables from queries. These utilities are part of the &lt;code&gt;bigquery-advanced-utils&lt;/code&gt; package and aim to simplify text processing in data workflows.&lt;/p&gt;
+&lt;h2&gt;Class Initialization&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;class-initialization&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#class-initialization&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;To use the &lt;code&gt;String&lt;/code&gt; utilities, you first need to create an instance of the class:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;bigquery_advanced_utils.utils.string&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;string_utils&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;String&lt;/code&gt; class does not require any parameters during initialization. Once instantiated, you can call its methods for various string manipulation tasks.&lt;/p&gt;
+&lt;h2&gt;Methods Overview&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;methods-overview&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#methods-overview&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;code&gt;remove_chars_from_string&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;remove_chars_from_string&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#remove_chars_from_string&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Description&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;description&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#description&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Removes specific characters from a given string.&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;string&lt;/code&gt; (str): The input string to process.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;chars_to_remove&lt;/code&gt; (list[str]): A list of characters to remove from the input string.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Returns&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;returns&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#returns&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;str&lt;/code&gt;: A new string with the specified characters removed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;InvalidArgumentToFunction&lt;/code&gt;: If the input parameters are invalid (e.g., &lt;code&gt;string&lt;/code&gt; is &lt;code&gt;None&lt;/code&gt;, or &lt;code&gt;chars_to_remove&lt;/code&gt; is not a non-empty list).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Example&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;bigquery_advanced_utils.utils.string&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;string_utils&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;input_string&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;chars_to_remove&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;cleaned_string&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;string_utils&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;remove_chars_from_string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;input_string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;chars_to_remove&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cleaned_string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# Output: &amp;#34;Hello World&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;except&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;InvalidArgumentToFunction&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Invalid arguments provided to the function.&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;h3&gt;&lt;code&gt;remove_comments_from_string&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;remove_comments_from_string&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#remove_comments_from_string&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Description&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;description-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#description-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Removes all comments from a given string based on the specified dialect (default is &lt;code&gt;standard_sql&lt;/code&gt;).&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;string&lt;/code&gt; (str): The input string, typically a SQL query.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dialect&lt;/code&gt; (str): The dialect to use for identifying comments. Default is &lt;code&gt;standard_sql&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Returns&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;returns-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#returns-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;str&lt;/code&gt;: The string with all comments removed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;InvalidArgumentToFunction&lt;/code&gt;: If the input parameters are invalid (e.g., &lt;code&gt;string&lt;/code&gt; is &lt;code&gt;None&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Example&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;input_query&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;SELECT * FROM table -- This is a comment
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;WHERE id = 1;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;cleaned_query&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;string_utils&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;remove_comments_from_string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;input_query&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cleaned_query&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# Output: &amp;#34;SELECT * FROM table WHERE id = 1;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;except&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;InvalidArgumentToFunction&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Invalid arguments provided to the function.&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;h3&gt;&lt;code&gt;extract_tables_from_query&lt;/code&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;extract_tables_from_query&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#extract_tables_from_query&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Description&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;description-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#description-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Extracts all table names from a SQL query string.&lt;/p&gt;
+&lt;h4&gt;Parameters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;parameters-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameters-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;string&lt;/code&gt; (str): The input SQL query string.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Returns&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;returns-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#returns-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;list[str]&lt;/code&gt;: A list of unique table names extracted from the query.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Raises&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raises-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raises-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;InvalidArgumentToFunction&lt;/code&gt;: If the input string is &lt;code&gt;None&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Example:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;query&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;SELECT * FROM `project.dataset.table` JOIN `project.dataset.table2` ON id = id
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;-- Commented out code
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;WHERE condition;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;tables&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;string_utils&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;extract_tables_from_query&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;query&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tables&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# Output: [&amp;#34;project.dataset.table&amp;#34;, &amp;#34;project.dataset.table2&amp;#34;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;except&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;InvalidArgumentToFunction&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Invalid arguments provided to the function.&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 
       </description>
     </item>
