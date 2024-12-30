@@ -5,7 +5,7 @@
     <description>Recent content in Blog on Up in Cloud ☁️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,6 +14,84 @@
         
       
     
+    
+    <item>
+      <title>How to Clear GitHub Actions History in a Few Simple Steps</title>
+      <link>http://localhost:1313/blog/clear-github-actions-history/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/clear-github-actions-history/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GitHub Actions is a powerful tool for automating workflows, but sometimes you may need to clear its history. Whether it’s for privacy, to free up storage, or to maintain a clean repository, the process is straightforward. Here’s a step-by-step guide to achieve this.&lt;/p&gt;
+&lt;h2&gt;Introduction&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;introduction&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#introduction&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;GitHub Actions helps automate workflows, but there are times when you might want to clear its history, whether for privacy, debugging, or to maintain a clean repository. This guide will show you how to do this by creating and running a simple workflow.&lt;/p&gt;
+&lt;p&gt;This process doesn’t delete logs from the past permanently stored by GitHub, but it helps replace them with a clean slate.&lt;/p&gt;
+&lt;h2&gt;Why reset a Repository?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;why-reset-a-repository&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-reset-a-repository&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Privacy&lt;/strong&gt;: Remove sensitive or unnecessary information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Debugging&lt;/strong&gt;: Start fresh to test new workflows.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Organized Repository&lt;/strong&gt;: Keep your Actions tab tidy and focused.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Steps to Reset a Git Repository&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;steps-to-reset-a-git-repository&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#steps-to-reset-a-git-repository&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Follow these steps to clear Github Action history:&lt;/p&gt;
+&lt;div class=&#34;steps hx-ml-4 hx-mb-12 ltr:hx-border-l rtl:hx-border-r hx-border-gray-200 ltr:hx-pl-6 rtl:hx-pr-6 dark:hx-border-neutral-800 [counter-reset:step]&#34;&gt;
+&lt;h3&gt;Create API token&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;create-api-token&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#create-api-token&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Create an API token with &lt;code&gt;Repository access: Actions: Read and write&lt;/code&gt; and store the key.&lt;/p&gt;
+&lt;h3&gt;Create a Bash Script&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;create-a-bash-script&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#create-a-bash-script&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Start by creating a new file called &lt;code&gt;clear_history.sh&lt;/code&gt; in your local repository directory. Add the following content to it:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;OWNER&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;--USER_NAME--&amp;#34;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#EDIT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;REPO&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;--REPO_NAME--&amp;#34;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#EDIT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;TOKEN&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;--MY_TOKEN--&amp;#34;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#EDIT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;runs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -s -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Authorization: token &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$TOKEN&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://api.github.com/repos/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$OWNER&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$REPO&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/actions/runs&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#34;id&amp;#34;:&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; awk &lt;span class=&#34;s1&#34;&gt;&amp;#39;{print $2}&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; tr -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; run_id in &lt;span class=&#34;nv&#34;&gt;$runs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Deleting run ID: &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$run_id&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  curl -X DELETE -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Authorization: token &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$TOKEN&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://api.github.com/repos/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$OWNER&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$REPO&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/actions/runs/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$run_id&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Edit the three variables with your data and the key created in the previous step.&lt;/p&gt;
+&lt;h3&gt;Execute script&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;execute-script&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#execute-script&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Execute the script from terminal:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./clear_history.sh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container  hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Conclusion&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusion&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Clearing GitHub Actions history is a simple yet effective way to maintain a clean and organized repository. By following this guide and using a straightforward Bash script, you can reset your workflows and ensure your repository remains tidy and efficient. &lt;strong&gt;Remember to handle your GitHub tokens securely and revoke them when no longer needed&lt;/strong&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
     
     <item>
       <title>How to Completely Reset a Git Repository: Starting Fresh with a New Main Branch</title>

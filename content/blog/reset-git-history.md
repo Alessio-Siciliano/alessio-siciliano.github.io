@@ -3,8 +3,8 @@ title: "How to Completely Reset a Git Repository: Starting Fresh with a New Main
 date: 2024-12-13
 authors:
   - name: Alessio Siciliano
-    link: https://github.com/imfing
-    image: https://github.com/imfing.png
+    link: https://github.com/Alessio-Siciliano
+    image: https://github.com/Alessio-Siciliano/imfing.png
 tags:
   - Github
   - Git
